@@ -14,43 +14,48 @@
     
     <title>Servicio Tecnico</title>
     <!--  Es el nombre que aparece en la pestañita del navegador -->
+    <link rel="stylesheet" href="estilos/estilo.css">
 </head>
 
 <body>
 <!-- aqui va todo lo que se ve en pantalla -->
 
-    
-    <h1 style="text-align: center; color: darkblue;">Servicio de Reparación de Equipos de Computación</h1>
+    <!-- MENU DE NAVEGACION con position fixed -->
+    <nav class="menu">
+        <a href="#">Datos</a>
+        <a href="#">¿Quiénes somos?</a>
+        <a href="#">Servicios</a>
+        <a href="#">Precios</a>
+        <a href="#">Redes</a>
+    </nav>
+    <!-- el menu queda fijo arriba mientras se hace scroll -->
+
+    <h1 class="titulo-principal">Servicio de Reparación de Equipos de Computación</h1>
     <!-- titulo grande, centrado y en azul oscuro -->
     
-    <h2 style="text-align: center; color: steelblue;">Técnico: Joel Pillajo</h2>
+    <h2 class="subtitulo-nombre">Técnico: Joel Pillajo</h2>
     <!-- subtitulo con el nombre, centrado y en azul mas clarito -->
 
-    <h2 style="color: darkblue;">Datos del Técnico</h2>
+    <h2 id="datos" class="titulo-seccion">Datos del Técnico</h2>
     
-    <p style="color: dimgray;">
+    <p class="texto">
       Nombre: Joel Pillajo <br>
-      <!-- br es para saltar a la siguiente linea -->
       Teléfono: 0993344862 <br>
       Email: joelpillajo0987@gmail.com <br>
       Ubicación: Llano Chico, Quito - Ecuador
     </p>
-    <!-- informacion de contacto en color gris -->
 
-   
-    <h2 style="color: darkblue;">¿Quiénes somos?</h2>
+    <h2 class="titulo-seccion">¿Quiénes somos?</h2>
     
-    <p style="color: dimgray;">
+    <p class="texto">
       Somos un servicio técnico especializado en la reparación y mantenimiento de equipos de computación. <br>
       Contamos con experiencia en diagnóstico y solución de problemas de hardware y software. <br>
       Nuestro objetivo es brindar un servicio rápido, confiable y a precios accesibles.
     </p>
-    <!-- parrafo explicando de que trata el servicio -->
 
-   
-    <h2 style="color: darkblue;">Servicios que ofrecemos</h2>
+    <h2  class="titulo-seccion">Servicios que ofrecemos</h2>
     
-    <p style="color: dimgray;">
+    <p class="texto">
       - Formateo e instalación de sistema operativo <br>
       - Limpieza interna de equipos <br>
       - Cambio de disco duro y memoria RAM <br>
@@ -59,108 +64,77 @@
       - Instalación de programas <br>
       - Mantenimiento preventivo y correctivo
     </p>
-    <!-- lista de todo lo que se ofrece, cada servicio en su propia linea -->
 
-    
-    <h2 style="color: darkblue;">Tabla de Precios</h2>
+    <h2 class="titulo-seccion">Tabla de Precios</h2>
     
     <table border="1px">
-    <!-- tabla con borde, sin esto no se ven las lineas -->
-    
       <tr>
-      <!-- tr es una fila de la tabla -->
         <th>N°</th>
         <th>Servicio</th>
         <th>Tiempo estimado</th>
         <th>Precio</th>
-        <!-- th es el titulo de cada columna, sale en negrilla automaticamente -->
       </tr>
-
       <tr>
         <td>1</td>
         <td>Formateo e instalación de Windows</td>
         <td>2 horas</td>
         <td>$15</td>
-        <!-- td es cada celda normal de la tabla -->
       </tr>
-
       <tr>
         <td>2</td>
         <td>Limpieza interna</td>
         <td>1 hora</td>
         <td>$10</td>
       </tr>
-
       <tr>
         <td>3</td>
         <td>Cambio de disco duro</td>
         <td>1 hora</td>
         <td>$20</td>
       </tr>
-
       <tr>
         <td>4</td>
         <td>Eliminación de virus</td>
         <td>2 horas</td>
         <td>$12</td>
       </tr>
-
       <tr>
         <td>5</td>
         <td>Instalación de programas</td>
         <td>30 minutos</td>
         <td>$5</td>
       </tr>
-
       <tr>
         <td colspan="3">Total máximo de servicios</td>
-        <!-- colspan="3" une 3 celdas en una sola -->
         <td>$62</td>
       </tr>
     </table>
 
-   
-    <h2 style="color: darkblue;">¿Necesitas más información?</h2>
+    <h2 class="titulo-seccion">¿Necesitas más información?</h2>
     
-    <p style="color: dimgray;">
+    <p class="texto">
       Visita este video para conocer más sobre el mantenimiento de computadoras: <br>
-      <a href="https://www.youtube.com/results?search_query=mantenimiento+de+computadoras" target="_blank" style="color: steelblue;">
+      <a href="https://www.youtube.com/results?search_query=mantenimiento+de+computadoras" target="_blank" class="enlace">
         Ver videos de mantenimiento de computadoras
       </a>
-      <!-- target="_blank" hace que el link abra en una nueva pestaña -->
     </p>
 
- 
-    <h2 style="color: darkblue;">Mis Redes Sociales</h2>
+    <h2  class="titulo-seccion">Mis Redes Sociales</h2>
     
-    <p style="color: dimgray;">
+    <p class="texto">
       Sígueme y contáctame por mis redes: <br><br>
-      <!-- dos br para dejar un espacio entre el texto y los links -->
-      
-      <a href="https://www.instagram.com/j.alex.19/" target="_blank" style="color: steelblue;">Instagram</a> <br><br>
-      <!-- link al instagram, abre en nueva pestaña -->
-      
-      <a href="https://www.facebook.com/joel.pillajo.96" target="_blank" style="color: steelblue;">Facebook</a>
-      <!-- link al facebook, igual abre en nueva pestaña -->
+      <a href="https://www.instagram.com/j.alex.19/" target="_blank" class="enlace">Instagram</a> <br><br>
+      <a href="https://www.facebook.com/joel.pillajo.96" target="_blank" class="enlace">Facebook</a>
     </p>
 
- 
-    <h2 style="color: darkblue;">Nuestro trabajo</h2>
+    <h2 class="titulo-seccion">Nuestro trabajo</h2>
     
     <img src="img/169730107-técnico-reparando-una-computadora-rota-concepto-de-servicio-y-reparación-de-computadoras.jpg"
          alt="Reparación de computadoras"
          width="400px"
          height="300px">
-    <!-- muestra una imagen, src es donde esta guardada.
-         alt es el texto que sale si la imagen no carga.
-         width y height son el tamaño en pantalla -->
 
-   
-    <h3 style="text-align: center; color: steelblue;">2025 Joel Pillajo - Servicio Técnico de Computación</h3>
-    <!-- texto pequeño al final de la pagina, centrado -->
+    <h3 class="piepagina">2025 Joel Pillajo - Servicio Técnico de Computación</h3>
 
 </body>
-<!-- fin de la pagina -->
-
 </html>
-<!-- fin del archivo -->

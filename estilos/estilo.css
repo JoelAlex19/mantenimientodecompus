@@ -1,0 +1,42 @@
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(98, 162, 235);
+    padding: 10px ;
+    text-align: center;   
+}
+
+.menu a {
+    color: rgb(1, 5, 48);
+    text-decoration: none;
+    margin: 15px;
+}
+
+
+
+.titulo-principal {
+    text-align: center;
+    color: darkblue;
+    margin-top: 60px;
+}
+
+.subtitulo-nombre {
+    text-align: center;
+    color: steelblue;
+}
+
+.titulo-seccion {
+    color: darkblue;
+}
+.texto {
+    color: dimgray;
+}
+
+.piepagina {
+    text-align: center;
+    color: steelblue;
+}
