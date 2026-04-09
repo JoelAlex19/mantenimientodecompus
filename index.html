@@ -1,140 +1,101 @@
 <!DOCTYPE html>
-<!-- esto le dice al navegador que tipo de archivo es-->
 <html lang="es">
-<!--  el lang="es" solo indica el idioma -->
-
 <head>
-    <!-- esta parte no se ve en la pagina pero es importante para su funcionamiento  -->
-    
     <meta charset="UTF-8">
-    <!-- para que se vean bien las tildes y la ñ, es para aceptar caracteres especiales  -->
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- para que la pagina se vea bien en el celular y en otros dispositivos  -->
-    
     <title>Servicio Tecnico</title>
-    <!--  Es el nombre que aparece en la pestañita del navegador -->
     <link rel="stylesheet" href="estilos/estilo.css">
 </head>
-
 <body>
-<!-- aqui va todo lo que se ve en pantalla -->
-
-    <!-- MENU DE NAVEGACION con position fixed -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <nav class="menu">
-        <a href="#">Datos</a>
-        <a href="#">¿Quiénes somos?</a>
-        <a href="#">Servicios</a>
-        <a href="#">Precios</a>
-        <a href="#">Redes</a>
+        <ul>
+            <li><a href="#"><ion-icon name="list-circle-outline"></ion-icon>Datos</a></li>
+            <li><a href="#"><ion-icon name="accessibility-outline"></ion-icon>¿Quiénes somos?</a></li>
+            <li><a href="#"><ion-icon name="list-outline"></ion-icon>Servicios</a></li>
+            <li><a href="#"><ion-icon name="wallet-outline"></ion-icon>Precios</a></li>
+            <li><a href="#"><ion-icon name="globe-outline"></ion-icon>Redes</a></li>
+        </ul>
     </nav>
-    <!-- el menu queda fijo arriba mientras se hace scroll -->
 
-    <h1 class="titulo-principal">Servicio de Reparación de Equipos de Computación</h1>
-    <!-- titulo grande, centrado y en azul oscuro -->
-    
-    <h2 class="subtitulo-nombre">Técnico: Joel Pillajo</h2>
-    <!-- subtitulo con el nombre, centrado y en azul mas clarito -->
+    <div class="Tecnico">
+        <h1 class="tituloprincipal">Servicio de Reparación de Equipos de Computación</h1>
+        <h2 class="nombre">Técnico: Joel Pillajo</h2>
+    </div>
 
-    <h2 id="datos" class="titulo-seccion">Datos del Técnico</h2>
-    
-    <p class="texto">
-      Nombre: Joel Pillajo <br>
-      Teléfono: 0993344862 <br>
-      Email: joelpillajo0987@gmail.com <br>
-      Ubicación: Llano Chico, Quito - Ecuador
-    </p>
+    <div class="contenedor">
 
-    <h2 class="titulo-seccion">¿Quiénes somos?</h2>
-    
-    <p class="texto">
-      Somos un servicio técnico especializado en la reparación y mantenimiento de equipos de computación. <br>
-      Contamos con experiencia en diagnóstico y solución de problemas de hardware y software. <br>
-      Nuestro objetivo es brindar un servicio rápido, confiable y a precios accesibles.
-    </p>
+        <h2 class="subtitulo">Datos del Técnico</h2>
+        <div class="Datos">
+            <p class="texto">
+                Nombre: Joel Pillajo &nbsp; 
+                Teléfono: 0993344862  &nbsp; 
+                Email: joelpillajo0987@gmail.com  &nbsp; 
+                Ubicación: Llano Chico, Quito - Ecuador
+            </p>
+        </div>
 
-    <h2  class="titulo-seccion">Servicios que ofrecemos</h2>
-    
-    <p class="texto">
-      - Formateo e instalación de sistema operativo <br>
-      - Limpieza interna de equipos <br>
-      - Cambio de disco duro y memoria RAM <br>
-      - Eliminación de virus y malware <br>
-      - Reparación de pantallas <br>
-      - Instalación de programas <br>
-      - Mantenimiento preventivo y correctivo
-    </p>
+        <h2 class="subtitulo">¿Quiénes somos? y Servicios</h2>
+        <div>
+            <div class="quienessomos">
+                <h3 class="subtitulo">¿Quiénes somos?</h3>
+                <p class="texto">
+                    Servicio técnico especializado en reparación y mantenimiento de equipos de computación.
+                    Diagnóstico y solución de problemas de hardware y software.
+                    Servicio rápido, confiable y a precios accesibles.
+                </p>
+            </div>
+            <div class="servicios">
+                <h3 class="subtitulo">Servicios</h3>
+                <p class="texto">
+                    Formateo e instalación de Windows<br>
+                    Limpieza interna de equipos<br>
+                    Cambio de disco duro y RAM<br>
+                    Eliminación de virus y malware<br>
+                    Reparación de pantallas<br>
+                    Instalación de programas<br>
+                    Mantenimiento preventivo y correctivo
+                </p>
+            </div>
+        </div>
 
-    <h2 class="titulo-seccion">Tabla de Precios</h2>
-    
-    <table border="1px">
-      <tr>
-        <th>N°</th>
-        <th>Servicio</th>
-        <th>Tiempo estimado</th>
-        <th>Precio</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Formateo e instalación de Windows</td>
-        <td>2 horas</td>
-        <td>$15</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Limpieza interna</td>
-        <td>1 hora</td>
-        <td>$10</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Cambio de disco duro</td>
-        <td>1 hora</td>
-        <td>$20</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Eliminación de virus</td>
-        <td>2 horas</td>
-        <td>$12</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Instalación de programas</td>
-        <td>30 minutos</td>
-        <td>$5</td>
-      </tr>
-      <tr>
-        <td colspan="3">Total máximo de servicios</td>
-        <td>$62</td>
-      </tr>
-    </table>
+        <div class="informacion">
+            <h3 class="subtitulo">Más información</h3>
+            <a href="https://www.youtube.com/results?search_query=mantenimiento+de+computadoras"
+               target="_blank" class="enlace">
+                Ver videos de mantenimiento de computadoras →
+            </a>
+        </div>
 
-    <h2 class="titulo-seccion">¿Necesitas más información?</h2>
-    
-    <p class="texto">
-      Visita este video para conocer más sobre el mantenimiento de computadoras: <br>
-      <a href="https://www.youtube.com/results?search_query=mantenimiento+de+computadoras" target="_blank" class="enlace">
-        Ver videos de mantenimiento de computadoras
-      </a>
-    </p>
+        <h2 class="subtitulo">Tabla de Precios</h2>
+        <div>
+            <table>
+                <tr>
+                    <th>N°</th>
+                    <th>Servicio</th>
+                    <th>Tiempo estimado</th>
+                    <th>Precio</th>
+                </tr>
+                <tr><td>1</td><td>Formateo e instalación de Windows</td><td>2 horas</td><td>$15</td></tr>
+                <tr><td>2</td><td>Limpieza interna</td><td>1 hora</td><td>$10</td></tr>
+                <tr><td>3</td><td>Cambio de disco duro</td><td>1 hora</td><td>$20</td></tr>
+                <tr><td>4</td><td>Eliminación de virus</td><td>2 horas</td><td>$12</td></tr>
+                <tr><td>5</td><td>Instalación de programas</td><td>30 minutos</td><td>$5</td></tr>
+                <tr><td colspan="3">Total máximo de servicios</td><td>$62</td></tr>
+            </table>
+        </div>
 
-    <h2  class="titulo-seccion">Mis Redes Sociales</h2>
-    
-    <p class="texto">
-      Sígueme y contáctame por mis redes: <br><br>
-      <a href="https://www.instagram.com/j.alex.19/" target="_blank" class="enlace">Instagram</a> <br><br>
-      <a href="https://www.facebook.com/joel.pillajo.96" target="_blank" class="enlace">Facebook</a>
-    </p>
+        <h2 class="subtitulo">Redes Sociales</h2>
+        <p class="texto">Sígueme y contáctame por mis redes:</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/j.alex.19/" target="_blank" class="boton">Instagram</a>
+            <a href="https://www.facebook.com/joel.pillajo.96" target="_blank" class="boton">Facebook</a>
+        </div>
 
-    <h2 class="titulo-seccion">Nuestro trabajo</h2>
-    
-    <img src="img/169730107-técnico-reparando-una-computadora-rota-concepto-de-servicio-y-reparación-de-computadoras.jpg"
-         alt="Reparación de computadoras"
-         width="400px"
-         height="300px">
+    </div>
 
-    <h3 class="piepagina">2025 Joel Pillajo - Servicio Técnico de Computación</h3>
+    <h3 class="piepagina">2025 Joel Pillajo — Servicio Técnico de Computación</h3>
 
 </body>
 </html>
