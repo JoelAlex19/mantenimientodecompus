@@ -1,101 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicio Tecnico</title>
-    <link rel="stylesheet" href="estilos/estilo.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
 </head>
+
 <body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <nav class="menu">
-        <ul>
-            <li><a href="#"><ion-icon name="list-circle-outline"></ion-icon>Datos</a></li>
-            <li><a href="#"><ion-icon name="accessibility-outline"></ion-icon>¿Quiénes somos?</a></li>
-            <li><a href="#"><ion-icon name="list-outline"></ion-icon>Servicios</a></li>
-            <li><a href="#"><ion-icon name="wallet-outline"></ion-icon>Precios</a></li>
-            <li><a href="#"><ion-icon name="globe-outline"></ion-icon>Redes</a></li>
+ <style>
+    
+ </style>
+    <div>
+        <ul class="nav justify-content-center" style="background-color: #ffffff;">
+            <li class="nav-item">
+                <a class="nav-link" href="#datos"><ion-icon name="list-circle-outline"></ion-icon> Datos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#quienes"><ion-icon name="accessibility-outline"></ion-icon> ¿Quiénes
+                    somos?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#servicios"><ion-icon name="list-outline"></ion-icon> Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#precios"><ion-icon name="wallet-outline"></ion-icon> Precios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#redes"><ion-icon name="globe-outline"></ion-icon> Redes</a>
+            </li>
         </ul>
-    </nav>
-
-    <div class="Tecnico">
-        <h1 class="tituloprincipal">Servicio de Reparación de Equipos de Computación</h1>
-        <h2 class="nombre">Técnico: Joel Pillajo</h2>
     </div>
 
-    <div class="contenedor">
 
-        <h2 class="subtitulo">Datos del Técnico</h2>
-        <div class="Datos">
-            <p class="texto">
-                Nombre: Joel Pillajo &nbsp; 
-                Teléfono: 0993344862  &nbsp; 
-                Email: joelpillajo0987@gmail.com  &nbsp; 
+    <div class="text-center ">
+        <h1>Servicio de Reparación de Equipos de Computación</h1>
+        <h2>Técnico: Joel Pillajo</h2>
+    </div>
+
+
+    <div>
+
+
+        <h2 id="datos">Datos del Técnico</h2>
+        <div class="card">
+            <div class="card-body">
+                Nombre: Joel Pillajo &nbsp;&nbsp;
+                Teléfono: 0993344862 &nbsp;&nbsp;
+                Email: joelpillajo0987@gmail.com &nbsp;&nbsp;
                 Ubicación: Llano Chico, Quito - Ecuador
-            </p>
-        </div>
-
-        <h2 class="subtitulo">¿Quiénes somos? y Servicios</h2>
-        <div>
-            <div class="quienessomos">
-                <h3 class="subtitulo">¿Quiénes somos?</h3>
-                <p class="texto">
-                    Servicio técnico especializado en reparación y mantenimiento de equipos de computación.
-                    Diagnóstico y solución de problemas de hardware y software.
-                    Servicio rápido, confiable y a precios accesibles.
-                </p>
-            </div>
-            <div class="servicios">
-                <h3 class="subtitulo">Servicios</h3>
-                <p class="texto">
-                    Formateo e instalación de Windows<br>
-                    Limpieza interna de equipos<br>
-                    Cambio de disco duro y RAM<br>
-                    Eliminación de virus y malware<br>
-                    Reparación de pantallas<br>
-                    Instalación de programas<br>
-                    Mantenimiento preventivo y correctivo
-                </p>
             </div>
         </div>
 
-        <div class="informacion">
-            <h3 class="subtitulo">Más información</h3>
-            <a href="https://www.youtube.com/results?search_query=mantenimiento+de+computadoras"
-               target="_blank" class="enlace">
-                Ver videos de mantenimiento de computadoras →
-            </a>
-        </div>
+        <h2>¿Quiénes somos? y Servicios</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
 
-        <h2 class="subtitulo">Tabla de Precios</h2>
-        <div>
-            <table>
-                <tr>
-                    <th>N°</th>
-                    <th>Servicio</th>
-                    <th>Tiempo estimado</th>
-                    <th>Precio</th>
-                </tr>
-                <tr><td>1</td><td>Formateo e instalación de Windows</td><td>2 horas</td><td>$15</td></tr>
-                <tr><td>2</td><td>Limpieza interna</td><td>1 hora</td><td>$10</td></tr>
-                <tr><td>3</td><td>Cambio de disco duro</td><td>1 hora</td><td>$20</td></tr>
-                <tr><td>4</td><td>Eliminación de virus</td><td>2 horas</td><td>$12</td></tr>
-                <tr><td>5</td><td>Instalación de programas</td><td>30 minutos</td><td>$5</td></tr>
-                <tr><td colspan="3">Total máximo de servicios</td><td>$62</td></tr>
-            </table>
-        </div>
+                        <H3>¿Quiénes somos? </H3>
+                        Servicio técnico especializado en reparación y mantenimiento de equipos de computación.
+                        Diagnóstico y solución de problemas de hardware y software.
+                        Servicio rápido, confiable y a precios accesibles.
+                    </div>
+                </div>
 
-        <h2 class="subtitulo">Redes Sociales</h2>
-        <p class="texto">Sígueme y contáctame por mis redes:</p>
-        <div class="redes">
-            <a href="https://www.instagram.com/j.alex.19/" target="_blank" class="boton">Instagram</a>
-            <a href="https://www.facebook.com/joel.pillajo.96" target="_blank" class="boton">Facebook</a>
-        </div>
 
-    </div>
+                <div class="col">
+                    <h3>Servicios</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Formateo e instalación de Windows</li>
+                        <li class="list-group-item"> Limpieza interna de equipos</li>
+                        <li class="list-group-item">Cambio de disco duro y RAM</li>
+                        <li class="list-group-item"> Eliminación de virus y malware</li>
+                        <li class="list-group-item">Reparación de pantalla</li>
+                        <li class="list-group-item">Instalación de programas</li>
 
-    <h3 class="piepagina">2025 Joel Pillajo — Servicio Técnico de Computación</h3>
+                    </ul>
+                </div>
 
+                <!-- MÁS INFORMACIÓN -->
+                <div class=" card mb-4">
+                    <h3>Más información</h3>
+                    <a href="https://www.youtube.com/results?search_query=mantenimiento+de+computadoras" target="_blank"
+                        style="color: #1a1a5e;">
+                        Ver videos de mantenimiento de computadoras →
+                    </a>
+                </div>
+
+                <!-- TABLA DE PRECIOS -->
+                <h2 id="precios">Tabla de Precios</h2>
+                <div class="card mb-4">
+                    <table class="table table-striped table-bordered mb-0">
+                        <thead>
+                            <tr>
+                                <th>N°</th>
+                                <th>Servicio</th>
+                                <th>Tiempo estimado</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Formateo e instalación de Windows</td>
+                                <td>2 horas</td>
+                                <td>$15</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Limpieza interna</td>
+                                <td>1 hora</td>
+                                <td>$10</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Cambio de disco duro</td>
+                                <td>1 hora</td>
+                                <td>$20</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Eliminación de virus</td>
+                                <td>2 horas</td>
+                                <td>$12</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Instalación de programas</td>
+                                <td>30 minutos</td>
+                                <td>$5</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><strong>Total máximo de servicios</strong></td>
+                                <td><strong>$62</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- REDES SOCIALES -->
+                <h2 id="redes">Redes Sociales</h2>
+                <p>Sígueme y contáctame por mis redes:</p>
+                <div class="d-flex gap-3">
+                    <a href="https://www.instagram.com/j.alex.19/" target="_blank"
+                        class="btn btn-instagram">Instagram</a>
+                    <a href="https://www.facebook.com/joel.pillajo.96" target="_blank"
+                        class="btn btn-facebook">Facebook</a>
+                </div>
+
+            </div>
+            
+          <div class="text-center">
+               <p> 2025 Joel Pillajo — Servicio Técnico de Computación</p>
+           <div>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
